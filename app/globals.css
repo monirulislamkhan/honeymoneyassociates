@@ -18,8 +18,38 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where(.dark, .dark *)); */
 
 @theme {
-  --color-primary: #ff0000;
+  --color-primary: #906b3e;
+  --color-primary-50: #faf8f2;
+  --color-primary-100: #f4f0e0;
+  --color-primary-200: #e7dfc1;
+  --color-primary-300: #d8c999;
+  --color-primary-400: #c8af73;
+  --color-primary-500: #bb9854;
+  --color-primary-600: #ad8549;
+  --color-primary-700: #906b3e;
+  --color-primary-800: #755737;
+  --color-primary-900: #5f472f;
+  --color-primary-950: #332417;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+  p {
+    @apply mb-4 text-justify;
+  }
+  b,
+  strong {
+    @apply font-semibold;
+  }
 }

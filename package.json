@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "'": "file:awesome.me/kit-e7972d293c@latest'",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/pro-regular-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@tailwindcss/postcss": "^4.0.0",
     "next": "15.1.6",
     "react": "^19.0.0",

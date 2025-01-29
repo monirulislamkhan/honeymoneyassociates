@@ -3,9 +3,11 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const navigation = [
-  { name: 'Home', href: '' },
+  { name: 'Home', href: '/' },
   { name: 'Contact Us', href: '/contact-us' },
 
 ]
@@ -16,16 +18,18 @@ export default function Header() {
   return (
     <div className="bg-white">
       <header className="relavie inset-x-0 top-0 z-50 max-w-6xl mx-auto">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+        <nav aria-label="Global" className="flex items-center justify-between py-1 p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
+              <Image
+                alt="Honey Money Associates Limited"
+                src="/images/logo.svg"
+                width={100}
+                height={60}
+                className="h-16 w-auto"
               />
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -39,9 +43,9 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+              <Link key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>
@@ -70,13 +74,13 @@ export default function Header() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

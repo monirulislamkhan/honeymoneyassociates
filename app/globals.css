@@ -1,25 +1,5 @@
 @import "tailwindcss";
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-/* @custom-variant dark (&:where(.dark, .dark *)); */
-
 @theme {
   --color-primary: #906b3e;
   --color-primary-50: #faf8f2;
@@ -37,7 +17,7 @@ body {
 
 @layer base {
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-4xl font-semibold;
   }
   h2 {
     @apply text-3xl font-semibold;
@@ -51,5 +31,14 @@ body {
   b,
   strong {
     @apply font-semibold;
+  }
+}
+
+@layer components {
+  .form-input {
+    @apply focus:border-primary-600 block w-full appearance-none rounded-lg border-2 border-gray-300 p-3 pb-2.5 text-gray-900 placeholder:text-transparent focus:outline-none;
+  }
+  .form-float-label {
+    @apply peer-focus:text-primary-600 absolute start-2 top-2 -translate-y-4.5 scale-90 transform cursor-text bg-white px-1.5 text-gray-500 duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4.5 peer-focus:scale-90;
   }
 }

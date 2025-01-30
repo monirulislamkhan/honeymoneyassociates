@@ -17,14 +17,15 @@
 
 @layer base {
   h1 {
-    @apply text-4xl font-semibold;
+    @apply text-2xl font-semibold md:text-4xl lg:text-5xl;
   }
   h2 {
-    @apply text-3xl font-semibold;
+    @apply text-4xl font-semibold;
   }
   h3 {
-    @apply text-2xl font-semibold;
+    @apply text-3xl font-semibold;
   }
+
   p {
     @apply mb-4 text-justify;
   }

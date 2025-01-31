@@ -1,7 +1,7 @@
 import HomeBanner from "@/components/home-banner";
 import Image from "next/image";
 import Link from "next/link";
-import { faArrowRightLong, faArrowUpRightFromSquare, faCircleArrowRight, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightLong, faArrowUpRightFromSquare, faCheck, faCircleArrowRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FooterComponent from "@/components/footer";
@@ -186,7 +186,45 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
 
+        <section className="py-32">
+          <div className="max-w-6xl mx-auto grid grid-cols-2 gap-18">
+            <div className="">
+              <Image src={"/images/home-banner.webp"} alt="Banner" width="1500" className="w-full rounded-2xl object-cover" height="700" />
+            </div>
+            <div className="">
+              <h2 className="mb-3">Why Choose Us?</h2>
+              <p className="text-start mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis neque totam est excepturi, sequi eos!</p>
+              <ul className="flex flex-col space-y-8">
+                <li className="flex gap-5 items-center">
+                  <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
+                  <div className="text-slate-700">
+                    <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
+                  </div>
+                </li>
+                <li className="flex gap-5 items-center">
+                  <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
+                  <div className="text-slate-700">
+                    <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
+                  </div>
+                </li>
+                <li className="flex gap-5 items-center">
+                  <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
+                  <div className="text-slate-700">
+                    <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
+                  </div>
+                </li>
+                <li className="flex gap-5 items-center">
+                  <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
+                  <div className="text-slate-700">
+                    <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
         </section>
 
 
@@ -198,7 +236,7 @@ export default function Home() {
               className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
             />
 
-            <div className="mx-auto max-w-6xl px-5 px-6 lg:px-8">
+            <div className="mx-auto max-w-6xl px-5 lg:px-8">
               <div className="mx-auto max-w-2xl text-center">
                 <h3 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">Looking for something specific?</h3>
                 <div className="mt-8 text-lg font-medium text-pretty text-gray-300">

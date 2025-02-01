@@ -26,6 +26,8 @@ const links = [
 ]
 
 
+
+
 export default function Home() {
   return (
     <>
@@ -231,13 +233,9 @@ export default function Home() {
 
 
         <section>
-          <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-              className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
-            />
-
+          <div className="relative isolate overflow-hidden py-24 sm:py-32">
+            <Image alt="" src="/images/our-office.webp" width={1400} height={550} className="absolute inset-0 -z-10 size-full object-cover lg:h-[600px]" />
+            <div className="absolute inset-0 -z-1 bg-slate-900/75"></div>
             <div className="mx-auto max-w-6xl px-5 lg:px-8">
               <div className="mx-auto max-w-2xl text-center">
                 <h3 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">Looking for something specific?</h3>
@@ -245,7 +243,7 @@ export default function Home() {
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
                   fugiat veniam occaecat fugiat.
                 </div>
-                <Link href="#" className="inline-block mt-8 px-8 py-3 text-lg font-semibold text-white bg-primary rounded-lg hover:bg-primary-600">Get In Touch</Link>
+                <Link href="/contact-us/" className="inline-block mt-8 px-8 py-2 text-lg font-semibold text-white bg-primary rounded-lg hover:bg-primary-600">Get In Touch</Link>
               </div>
             </div>
           </div>

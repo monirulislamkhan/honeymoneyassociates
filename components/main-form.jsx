@@ -1,8 +1,15 @@
 "use client"
-import { useState } from 'react'
+import { useState } from 'react';
+// import { countries } from 'country-flag-icons'
+// import { continents, countries, languages } from 'countries-list'
+import IntlTelInput from 'intl-tel-input/react';
+import "intl-tel-input/styles";
 
 
 export default function MainForm() {
+
+
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [country, setCountry] = useState('');
@@ -16,6 +23,7 @@ export default function MainForm() {
 
   return <>
     <form onSubmit={handleSubmit}>
+
       {/* Name Field */}
       <div className="relative mb-7">
         <input type="text" id="nameField" value={name} onChange={(e) => setName(e.target.value)} className="form-input peer" placeholder="Enter Your Name" />
@@ -30,21 +38,20 @@ export default function MainForm() {
 
 
       {/* Country Field and Mobile Field */}
-      <div className="mb-7 flex">
-        <div className="relative grow-1">
-          <select id="countries" value={country} onChange={e => setCountry(e.target.value)} className="peer form-input appearance-auto rounded-r-none">
-            <option value="US">United States</option>
-            <option value="CA">Canada</option>
-            <option value="FR">France</option>
-            <option value="DE">Germany</option>
-          </select>
-          <label htmlFor="countries" className="form-float-label">Select Country</label>
-        </div>
-        <div className="relative grow-1 ">
+      <div className="mb-7 relative grow-1">
+        <IntlTelInput initOptions={{
+          initialCountry: "in",
+        }} className="peer form-input appearance-auto rounded-r-none" />
+        {/*<select id="countries" value={country} onChange={e => setCountry(e.target.value)} className="peer form-input appearance-auto rounded-r-none">
+            {allCountries.map((country, id) => <option value={country.name} key={id}>{country.name}</option>)}
+          </select> */}
+        {/* <label htmlFor="countries" className="form-float-label">Select Country</label> */}
+      </div>
+
+      {/* <div className="relative grow-1 ">
           <input type="tel" id="phoneNo" value={mobile} onChange={e => setMobile(e.target.value)} className="form-input peer rounded-l-none" placeholder="Mobile No." />
           <label htmlFor="phoneNo" className="form-float-label">Mobile No.</label>
-        </div>
-      </div>
+        </div> */}
 
       {/* Message Field */}
       <div className="relative mb-7">

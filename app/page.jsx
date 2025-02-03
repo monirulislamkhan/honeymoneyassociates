@@ -25,9 +25,6 @@ const links = [
   { name: 'Meet our leadership', href: '#' },
 ]
 
-
-
-
 export default function Home() {
   return (
     <>

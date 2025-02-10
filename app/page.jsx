@@ -137,52 +137,18 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Our Guiding Principles */}
-        <section className="bg-slate-200 py-16 md:py-20">
+        {/* Our Mission */}
+        <section className="bg-slate-200 py-16 md:py-20 relative isolate">
           <div className="max-w-6xl mx-auto max-xl:px-6">
-            <div className="text-4xl font-bold mb-20 lg:text-center text-left uppercase ">Our Guiding Principles</div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6  space-y-10">
-              <div className="flex flex-col">
-                <div className="mb-4 p-4 bg-slate-400/50 self-start rounded-lg size-14 text-center text-2xl flex justify-center items-center">
-                  <FontAwesomeIcon icon={faUser} />
-                </div>
-                <h4 className="mb-2.5 text-xl font-semibold">Customer-Centric Approach</h4>
-                <div className="text-slate-700">Your satisfaction is our top priority. We are dedicated to providing personalized service and support to help you find the perfect property.</div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="col-span-1 lg:order-last">
+                <Image src="/images/mission.svg" alt="Banner" className="w-full lg:h-96" width={330} height={450} />
               </div>
-              <div className="flex flex-col">
-                <div className="mb-4 p-4 bg-slate-400/50 self-start rounded-lg size-14 text-center text-2xl flex justify-center items-center">
-                  <FontAwesomeIcon icon={faUser} />
-                </div>
-                <h4 className="mb-2.5 text-xl font-semibold">Customer-Centric Approach</h4>
-                <div className="text-slate-700">Your satisfaction is our top priority. We are dedicated to providing personalized service and support to help you find the perfect property.</div>
-              </div>
-              <div className="flex flex-col">
-                <div className="mb-4 p-4 bg-slate-400/50 self-start rounded-lg size-14 text-center text-2xl flex justify-center items-center">
-                  <FontAwesomeIcon icon={faUser} />
-                </div>
-                <h4 className="mb-2.5 text-xl font-semibold">Customer-Centric Approach</h4>
-                <div className="text-slate-700">Your satisfaction is our top priority. We are dedicated to providing personalized service and support to help you find the perfect property.</div>
-              </div>
-              <div className="flex flex-col">
-                <div className="mb-4 p-4 bg-slate-400/50 self-start rounded-lg size-14 text-center text-2xl flex justify-center items-center">
-                  <FontAwesomeIcon icon={faUser} />
-                </div>
-                <h4 className="mb-2.5 text-xl font-semibold">Customer-Centric Approach</h4>
-                <div className="text-slate-700">Your satisfaction is our top priority. We are dedicated to providing personalized service and support to help you find the perfect property.</div>
-              </div>
-              <div className="flex flex-col">
-                <div className="mb-4 p-4 bg-slate-400/50 self-start rounded-lg size-14 text-center text-2xl flex justify-center items-center">
-                  <FontAwesomeIcon icon={faUser} />
-                </div>
-                <h4 className="mb-2.5 text-xl font-semibold">Customer-Centric Approach</h4>
-                <div className="text-slate-700">Your satisfaction is our top priority. We are dedicated to providing personalized service and support to help you find the perfect property.</div>
-              </div>
-              <div className="flex flex-col">
-                <div className="mb-4 p-4 bg-slate-400/50 self-start rounded-lg size-14 text-center text-2xl flex justify-center items-center">
-                  <FontAwesomeIcon icon={faUser} />
-                </div>
-                <h4 className="mb-2.5 text-xl font-semibold">Customer-Centric Approach</h4>
-                <div className="text-slate-700">Your satisfaction is our top priority. We are dedicated to providing personalized service and support to help you find the perfect property.</div>
+              <div className="lg:col-span-1 lg:self-center">
+                <div className="text-4xl font-semibold mb-3">Our Mission</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet sed asperiores ducimus explicabo ea nulla molestias animi vitae voluptas numquam pariatur sapiente possimus, fugiat iure perspiciatis aliquid rerum ut quasi aspernatur! Nulla dolorum, est voluptatem, repellat impedit ut neque labore sit dolore et, laborum dolorem consequuntur. Reiciendis corporis odit ut, maiores veniam odio.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui obcaecati eum praesentium, ex temporibus sed aspernatur perspiciatis explicabo nulla quia? Repellendus distinctio iusto provident eum consequatur. Maiores eveniet nesciunt quod exercitationem beatae cum ipsam impedit?</p>
               </div>
             </div>
           </div>
@@ -190,41 +156,42 @@ export default function Home() {
 
         {/* Why Choose Us */}
         <section className="py-12 lg:py-32">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 max-xl:px-6 md:grid-cols-2 gap-8 md:gap-18">
-            <div className="">
-              <Image src={"/images/home-banner.webp"} alt="Banner" width="1500" className="w-full rounded-2xl object-cover" height="700" />
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="col-span-1">
+                <Image src="/images/vission.svg" alt="Banner" className="w-full lg:h-96" width={330} height={450} />
+              </div>
+              <div className="lg:col-span-1 lg:self-center">
+                <div className="text-4xl font-semibold mb-3">Our Vission</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae itaque nihil repudiandae consequatur non recusandae, laboriosam vitae asperiores autem officia veritatis nesciunt deserunt velit.</p>
+                <ul className="flex flex-col space-y-8">
+                  <li className="flex gap-5 items-center">
+                    <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
+                    <div className="text-slate-700">
+                      <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
+                    </div>
+                  </li>
+                  <li className="flex gap-5 items-center">
+                    <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
+                    <div className="text-slate-700">
+                      <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
+                    </div>
+                  </li>
+                  <li className="flex gap-5 items-center">
+                    <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
+                    <div className="text-slate-700">
+                      <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
+                    </div>
+                  </li>
+                  <li className="flex gap-5 items-center">
+                    <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
+                    <div className="text-slate-700">
+                      <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="">
-              <h2 className="mb-3">Why Choose Us?</h2>
-              <p className="text-start mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis neque totam est excepturi, sequi eos!</p>
-              <ul className="flex flex-col space-y-8">
-                <li className="flex gap-5 items-center">
-                  <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
-                  <div className="text-slate-700">
-                    <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
-                  </div>
-                </li>
-                <li className="flex gap-5 items-center">
-                  <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
-                  <div className="text-slate-700">
-                    <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
-                  </div>
-                </li>
-                <li className="flex gap-5 items-center">
-                  <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
-                  <div className="text-slate-700">
-                    <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
-                  </div>
-                </li>
-                <li className="flex gap-5 items-center">
-                  <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
-                  <div className="text-slate-700">
-                    <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
-                  </div>
-                </li>
-              </ul>
-            </div>
-
           </div>
         </section>
 

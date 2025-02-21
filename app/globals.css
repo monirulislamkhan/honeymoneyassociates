@@ -46,4 +46,7 @@
   .iti__search-input {
     @apply border-primary-600 outline-primary-600 px-2 py-1;
   }
+  .iti{
+    @apply block!
+  }
 }

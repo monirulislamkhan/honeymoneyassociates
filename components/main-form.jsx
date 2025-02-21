@@ -1,5 +1,5 @@
 "use client"
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 // import { countries } from 'country-flag-icons'
 // import { continents, countries, languages } from 'countries-list'
 import IntlTelInput from 'intl-tel-input/react';
@@ -7,18 +7,17 @@ import "intl-tel-input/styles";
 
 
 export default function MainForm() {
-
-
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [country, setCountry] = useState('');
-  const [mobile, setMobile] = useState('');
+  const [country, setCountry] = useState("");
+  const [number, setNumber] = useState('8700637682');
   const [message, setMessage] = useState('');
+  const [isValid, setIsValid] = useState('')
+  const [errorCode, setErrorCode] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ name, email, country, mobile, message });
+    console.log({ name, email, country, number, message });
   }
 
   return <>
@@ -39,19 +38,26 @@ export default function MainForm() {
 
       {/* Country Field and Mobile Field */}
       <div className="mb-7 relative grow-1">
-        <IntlTelInput initOptions={{
+        <IntlTelInput initialValue={number}
+          onChangeNumber={setNumber}
+          onChangeCountry={setCountry}
+          phoneNumber={setNumber}
+          initOptions={{
+            initialCountry: "in",
+          }} className="peer form-input appearance-auto rounded-r-none" />
+        {/* <IntlTelInput onChangeNumber={setMobile} initOptions={{
           initialCountry: "in",
-        }} className="peer form-input appearance-auto rounded-r-none" />
+        }} className="peer form-input appearance-auto rounded-r-none" /> */}
+
+
+
+
+
         {/*<select id="countries" value={country} onChange={e => setCountry(e.target.value)} className="peer form-input appearance-auto rounded-r-none">
             {allCountries.map((country, id) => <option value={country.name} key={id}>{country.name}</option>)}
           </select> */}
         {/* <label htmlFor="countries" className="form-float-label">Select Country</label> */}
       </div>
-
-      {/* <div className="relative grow-1 ">
-          <input type="tel" id="phoneNo" value={mobile} onChange={e => setMobile(e.target.value)} className="form-input peer rounded-l-none" placeholder="Mobile No." />
-          <label htmlFor="phoneNo" className="form-float-label">Mobile No.</label>
-        </div> */}
 
       {/* Message Field */}
       <div className="relative mb-7">

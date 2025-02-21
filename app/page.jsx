@@ -8,14 +8,10 @@ import FooterComponent from "@/components/footer";
 import Header from "@/components/header";
 
 const stats = [
-  { id: 1, name: 'Years of Industry Experience', value: '21+' },
-  { id: 2, name: 'Awards Recognizing Excellence', value: '200+' },
-  { id: 3, name: 'Satisfied Clients', value: '20,000+' },
-  { id: 4, name: 'Collaborating Developers', value: '100+' },
-  { id: 5, name: 'Ongoing & Completed Projects', value: '200+' },
-  { id: 6, name: 'Ongoing & Completed Projects', value: '200+' },
-  { id: 7, name: 'Ongoing & Completed Projects', value: '200+' },
-  { id: 8, name: 'Ongoing & Completed Projects', value: '200+' },
+  { id: 1, name: 'Victoriously Serving Our Clients With An Exclusively Customized Experience According To Their Needs', value: '21+', lebel: 'Years Of Experience' },
+  { id: 2, name: 'Receiving Awards Of Excellence From Renowned Establishments, We Aim To Constantly Strive On The Path Of Victory', value: '200+', lebel: 'Recognitions' },
+  { id: 3, name: 'We Are Consistently Fulfilling Our Goal To Fill Our Investors With Real Meaning Of Happiness', value: '20,000+', lebel: 'Satisfied Clients' },
+  { id: 4, name: 'We Are Channel Partners With Globally Recognized Real Estate Developers', value: '100+', lebel: 'Collaborating Developers' },
 ]
 
 const links = [
@@ -53,9 +49,7 @@ export default function Home() {
                 <small className="text-base md:text-lg text-primary font-semibold">We Are</small>
                 <h1 className="mb-4 lg:mb-6 uppercase">Honey Money Associates Limited</h1>
               </div>
-              <div className="text-lg lg:text-xl"><strong>Honey Money Associates Ltd.</strong>, a subsidiary of HCO Group of companies, is a professional
-                service provider for all real estate needs. ‘Together we all grow’ is our motto and is in fact the
-                philosophy HCO Group believes in.</div>
+              <div className="text-lg lg:text-xl"><strong>Showcasing Diverse Tailor-Made Services </strong>Honey Money Associates Ltd., a comprehensive forum, catering to all aspirations of prospective clients with regard to real estate, printing, advertising, and packaging services. We have taken pride in emerging as a team of professionals, since 2004, offering a wide range of tailor-made solutions that fill each one of our clients with joy and contentment and we have extended our business outside of India.</div>
               <a href="" className="mt-4 inline-flex text-lg items-center gap-2"><span className="font-semibold">Learn More</span>  <FontAwesomeIcon icon={faArrowRightLong} /></a>
             </div>
             <div className="">
@@ -67,13 +61,12 @@ export default function Home() {
         {/* About Section */}
         <section className="relative py-16">
           <div className="max-w-6xl mx-auto max-xl:px-6">
-            <small className="uppercase text-lg font-semibold inline-block mb-2 text-primary">Our Story</small>
-            <p className="text-2xl font-semibold"><strong>Honey Money Associates Ltd.</strong> is allied with several reputed developers in <strong>Delhi, Gurgaon and
-              Noida</strong>. The company is an Authorized Sales Organizer for the big league realty developers like <strong>DLF, Ireo, Tata Housing, Emaar MGF, Unitech, 3C, Jaypee Greens, Ansal API, Puri, BPTP,
-                Parsvnath</strong> among others. The company is also into original booking of plots, flats and
-              commercial spaces built by all the well-established realty developers in the Delhi-NCR region.
-              Buyers of property can opt, not just for living purposes, but as a solid investment opportunity
-              with good returns.</p>
+            <small className="uppercase text-lg font-semibold inline-block mb-2 text-primary">Our Legacy</small>
+            <p className="text-2xl font-semibold">Our real estate journey began in 2004 as we took our initial steps by emerging as an authorised channel partner with India’s globally acclaimed real estate developers. Some highly prominent names that I would like to mention here are, DLF, Emaar India, Sobha, Godrej Properties, TATA Realty, Mahindra Lifespaces, Conscient Infrastructure, Larsen and Toubro, Central Park, etc.</p>
+            <p className="text-2xl font-semibold">With time, i.e. since 2020, we augmented our business in Dubai’s real estate sector, following which we bloomed as a credible authorised channel partner with many top-notch developers of Dubai, such as Emaar Properties, Binghatti Developers, Nashama Developers, Danube Properties, Ellington Properties, Azizi Developments, Aldar Properties, and many others.
+            </p>
+            <p className="text-2xl font-semibold">Along with offering our expertise and providing personalised expertise to potential investors, we also help them with acquiring home loans, enhancing their level of comfort and flexibility. We aim to make you a proud investor as we help you with choosing the right property, whether it is residential or commercial.
+            </p>
 
           </div>
 
@@ -90,12 +83,13 @@ export default function Home() {
         <section className="bg-slate-200">
           <div className="mx-auto max-w-6xl max-xl:px-6 py-28">
             <div className="">
-              <div className="text-4xl font-bold mb-7">Fast facts : - Our Pillars of Excellence</div>
+              <div className="text-4xl font-bold mb-7">Our Pillars Of Strength</div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {stats.map(stat => (
                 <div className="bg-white p-6 rounded-xl" key={stat.id}>
                   <dl className="mx-auto flex flex-col">
+                    <span className="text-xl block py-4">{stat.lebel}</span>
                     <dt className="text-lg text-gray-600">{stat.name}</dt>
                     <dd className="order-first text-2xl font-bold  sm:text-4xl">
                       {stat.value}
@@ -117,8 +111,9 @@ export default function Home() {
               </div>
               <figcaption className="flex flex-col justify-center pb-8 px-5 xl:p-12 lg:max-w-[450px]">
                 <span className="inline-flex items-center gap-2 text-primary-300 py-2 px-4 rounded-full bg-slate-700 self-start font-semibold text-sm"><FontAwesomeIcon icon={faStar} /> Get in touch</span>
-                <div className="text-2xl md:text-3xl lg:text-4xl font-semibold py-4 text-white">Buy Properties from India HcoRealEstates</div>
-                <p className="text-left text-gray-300 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas officiis rerum corporis, dicta consequatur.</p>
+                <div className="text-2xl md:text-3xl lg:text-4xl font-semibold py-4 text-white">Buy Properties From HCO Real Estates</div>
+                <p className="text-left text-gray-300 md:text-lg">HCO Real Estates is your go-to place when it comes to attaining authentic information and ideal assistance, with respect to top real estate developers in India. By providing a well-crafted experience, will help you to choose the most righteous development, benefiting you in the long run.
+                </p>
                 <a target="_blank" className="bg-white text-slate-900 font-semibold py-2.5 px-4 rounded-full inline-flexgap-2 self-start text-lg group-hover:ml-4 transition-all before:absolute before:inset-0 before:z-10" href="https://www.hcorealestates.com/">Start Exploring <FontAwesomeIcon icon={faCircleArrowRight} /></a>
               </figcaption>
             </figure>
@@ -129,8 +124,8 @@ export default function Home() {
               </div>
               <figcaption className="flex flex-col justify-center pb-8 px-5 xl:p-12 lg:max-w-[450px]">
                 <span className="inline-flex items-center gap-2 text-primary-300 py-2 px-4 rounded-full bg-slate-700 self-start font-semibold text-sm"><FontAwesomeIcon icon={faStar} /> Get in touch</span>
-                <div className="text-2xl md:text-3xl lg:text-4xl font-semibold py-4 text-white">Buy Properties from India HcoRealEstates</div>
-                <p className="text-left text-gray-300 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas officiis rerum corporis, dicta consequatur.</p>
+                <div className="text-2xl md:text-3xl lg:text-4xl font-semibold py-4 text-white">Buy Properties From Dubai Housing</div>
+                <p className="text-left text-gray-300 md:text-lg">At Dubai Housing, we, as channel partners with globally recognized developers emphasize on offering the most accurate guidance and a meticulously crafted experience to our prospective home buyers and investors in choosing the right property and neighbourhood.</p>
                 <a target="_blank" className="bg-white text-slate-900 font-semibold py-2.5 px-4 rounded-full inline-flexgap-2 self-start text-lg group-hover:ml-4 transition-all before:absolute before:inset-0 before:z-10" href="https://www.dubaihousing-ae.com/">Start Exploring <FontAwesomeIcon icon={faCircleArrowRight} /></a>
               </figcaption>
             </figure>
@@ -146,9 +141,10 @@ export default function Home() {
               </div>
               <div className="lg:col-span-1 lg:self-center">
                 <div className="text-4xl font-semibold mb-3">Our Mission</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet sed asperiores ducimus explicabo ea nulla molestias animi vitae voluptas numquam pariatur sapiente possimus, fugiat iure perspiciatis aliquid rerum ut quasi aspernatur! Nulla dolorum, est voluptatem, repellat impedit ut neque labore sit dolore et, laborum dolorem consequuntur. Reiciendis corporis odit ut, maiores veniam odio.</p>
+                <p>At Honey Money Associates Ltd, our first and foremost goal is to identify and comprehend the specifications of our clients in a detailed manner in order to offer them the right opportunities that are dedicatedly crafted according to their needs.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui obcaecati eum praesentium, ex temporibus sed aspernatur perspiciatis explicabo nulla quia? Repellendus distinctio iusto provident eum consequatur. Maiores eveniet nesciunt quod exercitationem beatae cum ipsam impedit?</p>
+                <p>As we have teamed up with top real estate developers and become their channel partners, we endeavour on a path where we guide our clients to come across various options, with regard to real estate developments. <strong>  We deliver what we claim</strong> and this motto lies at the core of Honey Money Associates Limited.</p>
+                <p>In this technology-driven world which indeed plays a key role in real estate, our goal is to offer ideally crafted options and accordingly solutions to our respective clientele. We keep our clients updated by offering them insights on the recent market trends so that they can have authentic information, with regard to the amount of capital appreciation on a particular property along with a location.</p>
               </div>
             </div>
           </div>
@@ -156,59 +152,37 @@ export default function Home() {
 
         {/* Why Choose Us */}
         <section className="py-12 lg:py-32">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div className="col-span-1">
+          <div className="max-w-6xl mx-auto text-center">
+            <div className="text-4xl font-semibold mb-10">Our Vission</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* <div className="col-span-1">
                 <Image src="/images/vission.svg" alt="Banner" className="w-full lg:h-96" width={330} height={450} />
+              </div> */}
+              <div className="p-8 border border-slate-200 bg-slate-100 rounded-md">
+                <div className="font-semibold text-xl mb-2">Ideal Assistance</div>
+                <div className="">Guiding People To Choose An Ideal Property From An Extensive Range Of Options
+                </div>
               </div>
-              <div className="lg:col-span-1 lg:self-center">
-                <div className="text-4xl font-semibold mb-3">Our Vission</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae itaque nihil repudiandae consequatur non recusandae, laboriosam vitae asperiores autem officia veritatis nesciunt deserunt velit.</p>
-                <ul className="flex flex-col space-y-8">
-                  <li className="flex gap-5 items-center">
-                    <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
-                    <div className="text-slate-700">
-                      <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
-                    </div>
-                  </li>
-                  <li className="flex gap-5 items-center">
-                    <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
-                    <div className="text-slate-700">
-                      <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
-                    </div>
-                  </li>
-                  <li className="flex gap-5 items-center">
-                    <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
-                    <div className="text-slate-700">
-                      <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
-                    </div>
-                  </li>
-                  <li className="flex gap-5 items-center">
-                    <FontAwesomeIcon icon={faCheck} className="text-2xl text-primary self-start mt-1.5" />
-                    <div className="text-slate-700">
-                      <span className="block text-xl font-medium">Extensive Property Listings</span> A diverse range of properties to suit every need and budget.
-                    </div>
-                  </li>
-                </ul>
+              <div className="p-8 border border-slate-200 bg-slate-100 rounded-md">
+                <div className="font-semibold text-xl mb-2">Analysis Of Recent Trends</div>
+                <div className="">Providing Accurate Information On The Statistics Of Real Estate Sector</div>
+              </div>
+              <div className="p-8 border border-slate-200 bg-slate-100 rounded-md">
+                <div className="font-semibold text-xl mb-2">Ensuring Transparency</div>
+                <div className="">Adhering To Ethical Business Practices As We Deliver Our Services</div>
               </div>
             </div>
           </div>
         </section>
 
-
         <section>
           <div className="relative isolate overflow-hidden py-24 sm:py-32">
-            <Image alt="" src="/images/our-office.webp" width={1400} height={550} className="absolute inset-0 -z-10 size-full object-cover lg:h-[600px]" />
+            <Image alt="Seeking A More Custom-Made Experience?" src="/images/our-office.webp" width={1400} height={550} className="absolute inset-0 -z-10 size-full object-cover lg:h-[600px]" />
             <div className="absolute inset-0 -z-1 bg-slate-900/75"></div>
-            <div className="mx-auto max-w-6xl px-5 lg:px-8">
-              <div className="mx-auto max-w-2xl text-center">
-                <h3 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">Looking for something specific?</h3>
-                <div className="mt-8 text-lg font-medium text-pretty text-gray-300">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                  fugiat veniam occaecat fugiat.
-                </div>
-                <Link href="/contact-us/" className="inline-block mt-8 px-8 py-2 text-lg font-semibold text-white bg-primary rounded-lg hover:bg-primary-600">Get In Touch</Link>
-              </div>
+            <div className="mx-auto max-w-6xl px-5 lg:px-8 text-center">
+              <h3 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">Seeking A More Custom-Made Experience?</h3>
+              <div className="mt-8 text-lg font-medium text-pretty text-gray-300">We are all ears to each one of your wants and needs, specializing in making your experience worth remembering for an entire lifetime. We will give you a much-personalized guidance, ultimately filling you with gratitude and contentment.</div>
+              <Link href="/contact-us/" className="inline-block mt-8 px-8 py-2 text-lg font-semibold text-white bg-primary rounded-lg hover:bg-primary-600">Get In Touch</Link>
             </div>
           </div>
         </section>

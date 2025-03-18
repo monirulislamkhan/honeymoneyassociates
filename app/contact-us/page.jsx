@@ -14,8 +14,8 @@ export default function ContactUs() {
         <Image src="/images/location-map.webp" className="hidden sm:block w-screen" alt="" width={1500} height={500} />
       </section>
 
-      <section className="relative -mt-24">
-        <div className="max-w-6xl  mx-6 lg:mx-auto bg-white rounded-2xl lg:p-10 md:p-8">
+      <section className="relative md:-mt-24">
+        <div className="max-w-6xl  mx-6 lg:mx-auto bg-white rounded-2xl pt-6 lg:p-10 md:p-8">
           {/* White background caontainer */}
           <div className="grid md:grid-cols-2 gap-12 md:gap-20">
             <div className="">

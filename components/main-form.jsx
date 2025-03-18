@@ -9,7 +9,7 @@ export default function MainForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [country, setCountry] = useState("");
-  const [number, setNumber] = useState('87');
+  const [number, setNumber] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
@@ -46,7 +46,7 @@ export default function MainForm() {
           }}
           className="peer form-input appearance-auto rounded-r-none"
         /> */}
-        <select id="countries" className="form-input peer appearance-auto">
+        <select id="countries" value={country} onChange={e => setCountry(e.target.value)} className="form-input peer appearance-auto">
           <option>Select Country</option>
           <option value="US">United States</option>
           <option value="CA">Canada</option>
@@ -54,6 +54,12 @@ export default function MainForm() {
           <option value="DE">Germany</option>
         </select>
         <label htmlFor="countries" className="form-float-label">Select Country</label>
+      </div>
+
+      {/* Number Field */}
+      <div className="relative mb-7">
+        <input type="tel" value={number} onChange={e => setNumber(e.target.value)} id="numberField" className="form-input peer" placeholder="Enter Mobile No." />
+        <label htmlFor="numberField" className="form-float-label">Enter Mobile No.</label>
       </div>
 
       {/* Message Field */}

@@ -29,7 +29,6 @@ export default function Home() {
       <main>
         {/* Banner Section */}
         <div className="relative isolate">
-          {/*  */}
           <div
             aria-hidden="true"
             className="absolute inset-x-0 -top-0 -z-10 transform-gpu overflow-hidden blur-3xl -sm:top-5"
@@ -50,7 +49,7 @@ export default function Home() {
                 <h1 className="mb-4 lg:mb-6 uppercase">Honey Money Associates Limited</h1>
               </div>
               <div className="text-lg lg:text-xl"><strong>Showcasing Diverse Tailor-Made Services </strong>Honey Money Associates Ltd., a comprehensive forum, catering to all aspirations of prospective clients with regard to real estate, printing, advertising, and packaging services. We have taken pride in emerging as a team of professionals, since 2004, offering a wide range of tailor-made solutions that fill each one of our clients with joy and contentment and we have extended our business outside of India.</div>
-              <a href="" className="mt-4 inline-flex text-lg items-center gap-2"><span className="font-semibold">Learn More</span>  <FontAwesomeIcon icon={faArrowRightLong} /></a>
+              {/* <a href="" className="mt-4 inline-flex text-lg items-center gap-2"><span className="font-semibold">Learn More</span>  <FontAwesomeIcon icon={faArrowRightLong} /></a> */}
             </div>
             <div className="">
               <Image src={"/images/home-banner.webp"} alt="Banner" width={700} className="w-full rounded-2xl h-96 lg:h-[550px] object-cover" height={500} />

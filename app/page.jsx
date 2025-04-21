@@ -152,8 +152,8 @@ export default function Home() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-12 lg:py-32">
-          <div className="max-w-6xl mx-auto text-center">
+        <section className="py-12 lg:py-32 xl:pb-60">
+          <div className="max-w-6xl mx-auto text-center px-6">
             <div className="text-4xl font-semibold mb-10">Our Vission</div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* <div className="col-span-1">
@@ -177,15 +177,15 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="relative py-24 sm:py-32 bg-primary-200 grid lg:grid-cols-2">
+          <div className="relative  bg-primary-200 grid lg:grid-cols-2">
             {/* <Image alt="Seeking A More Custom-Made Experience?" src="/images/our-office.webp" width={1400} height={550} className="absolute inset-0 -z-10 size-full object-cover lg:h-[600px]" /> */}
-            <div className=""></div>
-
-
-            <div className="mx-auto max-w-6xl px-5 lg:px-8">
+            <div className="xl:-mt-70">
+              <Image alt="Seeking A More Custom-Made Experience?" src="/images/home-footer-banner.webp" width={800} height={750} className=" w-full h-auto" />
+            </div>
+            <div className="mx-auto max-w-6xl px-8 lg:px-14 py-10 flex flex-col justify-center">
               <h3 className="text-3xl font-semibold tracking-tight text-primary sm:text-5xl">Seeking A More Custom-Made Experience?</h3>
               <div className="mt-8 text-lg">We are all ears to each one of your wants and needs, specializing in making your experience worth remembering for an entire lifetime. We will give you a much-personalized guidance, ultimately filling you with gratitude and contentment.</div>
-              <Link href="/contact-us/" className="inline-block mt-8 px-8 py-2 text-lg font-semibold text-white bg-primary rounded-lg hover:bg-primary-600">Get In Touch</Link>
+              <Link href="/contact-us/" className="inline-block self-start mt-8 px-8 py-2 text-lg font-semibold text-white bg-primary rounded-lg hover:bg-primary-600">Get In Touch</Link>
             </div>
           </div>
         </section>

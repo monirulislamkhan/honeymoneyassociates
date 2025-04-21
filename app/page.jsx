@@ -24,6 +24,8 @@ const links = [
 export default function Home() {
   return (
     <>
+      <title>Honey Money Associates Limited Moti Nagar</title>
+
       {/* Hero Section */}
       <Header />
       <main>
@@ -52,7 +54,7 @@ export default function Home() {
               {/* <a href="" className="mt-4 inline-flex text-lg items-center gap-2"><span className="font-semibold">Learn More</span>  <FontAwesomeIcon icon={faArrowRightLong} /></a> */}
             </div>
             <div className="">
-              <Image src={"/images/home-banner.webp"} alt="Banner" width={700} className="w-full rounded-2xl h-96 lg:h-[550px] object-cover" height={500} />
+              <Image src={"/images/home-banner.webp"} alt="Banner" width={700} className="w-full rounded-2xl border border-primary-200 h-120 lg:h-150 object-cover object-top" height={500} />
             </div>
           </div>
         </div>
@@ -61,7 +63,7 @@ export default function Home() {
         <section className="relative py-16">
           <div className="max-w-6xl mx-auto max-xl:px-6">
             <small className="uppercase text-lg font-semibold inline-block mb-2 text-primary">Our Legacy</small>
-            <p className="text-2xl font-semibold">Our real estate journey began in 2004 as we took our initial steps by emerging as an authorised channel partner with India’s globally acclaimed real estate developers. Some highly prominent names that I would like to mention here are, DLF, Emaar India, Sobha, Godrej Properties, TATA Realty, Mahindra Lifespaces, Conscient Infrastructure, Larsen and Toubro, Central Park, etc.</p>
+            <p className="text-2xl font-semibold">Our real estate journey began in 2004 as we took our initial steps by emerging as an authorised channel partner with India’s globally acclaimed real estate developers. Some highly prominent names that I would like to mention here are, DLF Limited, Emaar India, Sobha, Godrej Properties, TATA Realty, Mahindra Lifespaces, Conscient Infrastructure, Larsen and Toubro, Central Park, etc.</p>
             <p className="text-2xl font-semibold">With time, i.e. since 2020, we augmented our business in Dubai’s real estate sector, following which we bloomed as a credible authorised channel partner with many top-notch developers of Dubai, such as Emaar Properties, Binghatti Developers, Nashama Developers, Danube Properties, Ellington Properties, Azizi Developments, Aldar Properties, and many others.
             </p>
             <p className="text-2xl font-semibold">Along with offering our expertise and providing personalised expertise to potential investors, we also help them with acquiring home loans, enhancing their level of comfort and flexibility. We aim to make you a proud investor as we help you with choosing the right property, whether it is residential or commercial.
@@ -70,11 +72,11 @@ export default function Home() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-5 max-w-7xl mx-auto py-6 items-center max-xl:px-6">
-            <Image src="/images/story-01.webp" alt="Banner" className="w-full rounded-xl object-cover lg:h-96" width={330} height={450} />
+            <Image src="/images/01.webp" alt="Banner" className="w-full rounded-xl object-cover lg:h-96" width={330} quality={90} height={450} />
 
-            <Image src="/images/story-02.webp" alt="Banner" className="w-full rounded-xl object-cover lg:h-[550px]" width={330} height={450} />
+            <Image src="/images/02.webp" alt="Banner" className="w-full rounded-xl object-cover lg:h-[550px]" quality={90} width={330} height={450} />
 
-            <Image src="/images/story-03.webp" alt="Banner" className="w-full rounded-xl object-cover lg:h-96" width={330} height={450} />
+            <Image src="/images/03.webp" alt="Banner" className="w-full rounded-xl object-cover lg:h-96" quality={90} width={330} height={450} />
           </div>
         </section>
 
@@ -175,12 +177,14 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="relative isolate overflow-hidden py-24 sm:py-32">
-            <Image alt="Seeking A More Custom-Made Experience?" src="/images/our-office.webp" width={1400} height={550} className="absolute inset-0 -z-10 size-full object-cover lg:h-[600px]" />
-            <div className="absolute inset-0 -z-1 bg-slate-900/75"></div>
-            <div className="mx-auto max-w-6xl px-5 lg:px-8 text-center">
-              <h3 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">Seeking A More Custom-Made Experience?</h3>
-              <div className="mt-8 text-lg font-medium text-pretty text-gray-300">We are all ears to each one of your wants and needs, specializing in making your experience worth remembering for an entire lifetime. We will give you a much-personalized guidance, ultimately filling you with gratitude and contentment.</div>
+          <div className="relative py-24 sm:py-32 bg-primary-200 grid lg:grid-cols-2">
+            {/* <Image alt="Seeking A More Custom-Made Experience?" src="/images/our-office.webp" width={1400} height={550} className="absolute inset-0 -z-10 size-full object-cover lg:h-[600px]" /> */}
+            <div className=""></div>
+
+
+            <div className="mx-auto max-w-6xl px-5 lg:px-8">
+              <h3 className="text-3xl font-semibold tracking-tight text-primary sm:text-5xl">Seeking A More Custom-Made Experience?</h3>
+              <div className="mt-8 text-lg">We are all ears to each one of your wants and needs, specializing in making your experience worth remembering for an entire lifetime. We will give you a much-personalized guidance, ultimately filling you with gratitude and contentment.</div>
               <Link href="/contact-us/" className="inline-block mt-8 px-8 py-2 text-lg font-semibold text-white bg-primary rounded-lg hover:bg-primary-600">Get In Touch</Link>
             </div>
           </div>

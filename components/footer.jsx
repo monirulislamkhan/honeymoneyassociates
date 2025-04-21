@@ -22,7 +22,7 @@ export default function FooterComponent() {
         </div>
       </div> */}
       {/* <div className="text-sm text-gray-600 mt-4 max-w-6xl mx-auto py-8 border-t border-gray-300 text-center"> */}
-      <div className="text-sm text-gray-600 mt-4 max-w-6xl mx-auto py-8 px-6 text-center">
+      <div className="text-sm text-gray-600 max-w-6xl mx-auto py-8 px-6 text-center">
         &copy; {new Date().getFullYear()} Honey Money Associates Limited. All rights reserved.
       </div>
     </footer>
